@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    display: inline-block;
+}
+
+.logo-tablet{
+    display: none;
+}
+
+.titles{
+    display: inline-flex;
+    place-items: center;
+    gap: 78px;
+    font-family: 'Inder', sans-serif;
+    font-size: 1rem;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+body{
+    background-image: url(./img/Desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.compra-agora{
+    background-color: white;
+    height: 50px;
+    display: flex;
+    margin-right: 20px;
+    border-radius: 40px;
+    width: 150px;
+    justify-content: center;
+    cursor: pointer;
+}
+.compra-agora a{
+    place-self: center;
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    padding: 90px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.description__title{
+    color: black;
+    width: 35%;
+    font-size: 44px;
+    line-height: 42px;
+    font-weight: bold;
+    font-family: 'PT Serif', serif;
+}
+
+.description__text{
+    color: black;
+    line-height: 26px;
+    width: 30%;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+}
+
+.peca-agora{
+    width: 342px;
+    height: 68px;
+    border-radius: 28px;
+    background-color: #FFBD59;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.peca-agora a{
+    place-self: center;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+.image{
+    display: none;
+}
+
+.carrinho{
+    cursor: pointer;
+}
+
+@media (max-width:912px){
+
+    body{
+        background-image: url(./img/Tablet.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .logo-tablet{
+        display: flex;
+    }
+
+    .titles{
+        gap: 16px;
+        font-size: 8.4px;
+    }
+
+    .carrinho{
+        width: 10%
+    }
+
+    .compra-agora{
+        width: 80px;
+        height: 30px;
+    }
+
+    .compra-agora a{
+        font-size: 10px;
+        text-decoration: none;
+    }
+
+    .description{
+        gap: 20px;
+        padding-top: 110px;
+    }
+
+    .description__title{
+        font-size: 1.5rem;
+        line-height: normal;
+        width: 50%;
+    }
+
+    .description__text{
+        font-size: 1rem;
+        text-align: initial;
+        width: 90%;
+    }
+
+}
+
+@media (max-width:414px){
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .logo{
+        display: flex;
+        width: 30%;
+    }
+
+    .titles{
+        display: none;
+        place-items: center;
+        font-family: 'Inder', sans-serif;
+    }
+    
+    header{
+        height: 100px;
+    }
+
+    header nav{
+        display: none;
+    }
+    
+    body{
+        background-image: url(./img/Mobile\ 2.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    main{
+        display: flex;
+        padding: 0px;
+    }
+
+    .description{
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+        padding-top: 10px;
+        gap: 1rem;
+    }
+
+    .description__title{
+        color: black;
+        width: 25%;
+        font-size: 1rem;
+        font-family: 'PT Serif', serif;
+        line-height: 20px;
+    }
+
+    .description__text{
+        color: black;
+        width: 48%;
+        font-size: 12px;
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 400;
+        line-height: 12px;
+    }
+    
+    .peca-agora{
+        width: 242px;
+        height: 68px;
+        border-radius: 28px;
+        background-color: #FFBD59;
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+    }
+    
+    .peca-agora a{
+        place-self: center;
+        color: white;
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 800;
+        font-size: 2rem;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    .image{
+        display: flex;
+        justify-content: center;
+    }
+
+}
